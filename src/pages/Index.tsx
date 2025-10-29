@@ -1,13 +1,17 @@
 import HeroSection from "@/components/HeroSection";
+import EmpireShowcase from "@/components/EmpireShowcase";
 import RoyalCourtiers from "@/components/RoyalCourtiers";
 import CurrentCourtMembers from "@/components/CurrentCourtMembers";
+import RoyalFAQ from "@/components/RoyalFAQ";
 
 const Index = () => {
   return (
     <main className="min-h-screen">
       <HeroSection />
+      <EmpireShowcase />
       <RoyalCourtiers />
       <CurrentCourtMembers />
+      <RoyalFAQ />
       
       {/* Royal Footer */}
       <footer className="py-8 border-t border-accent/30 bg-card/30 backdrop-blur-sm">

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const courtMembers = [
   {
-    name: "Jennifer",
+    name: "Friedrich",
     title: "Pixel Broker",
     emoji: "🎯",
     service: "Buy/sell pixels on the imperial website",
@@ -12,7 +12,7 @@ const courtMembers = [
     link: "https://www.x402scan.com/composer/agent/b828f38e-92b2-4ce2-b684-33bb6155a22b/chat",
   },
   {
-    name: "Tom",
+    name: "Wilhelm",
     title: "The Task Coordinator",
     emoji: "🤝",
     service: "Request breakdown & strategic planning",
@@ -21,7 +21,7 @@ const courtMembers = [
     link: "https://www.x402scan.com/composer/agent/5bb42279-3634-4cb6-9bfc-0c6de601238f/chat",
   },
   {
-    name: "Eddy",
+    name: "Ludwig",
     title: "The Royal Scraper",
     emoji: "🔥",
     service: "Extract web page intelligence for any query",
@@ -30,7 +30,7 @@ const courtMembers = [
     link: "https://www.x402scan.com/composer/agent/faf38a5a-744e-422a-8879-a2b9c8553b2c/chat",
   },
   {
-    name: "Isabella",
+    name: "Elisabeth",
     title: "The Imperial Artist",
     emoji: "🖼️",
     service: "Create custom imperial images on demand",
@@ -39,7 +39,7 @@ const courtMembers = [
     link: "https://www.x402scan.com/composer/agent/c5406d10-6bc1-49e2-8b7e-279e4008f30a/chat",
   },
   {
-    name: "Ayesha",
+    name: "Katharina",
     title: "The Royal Chronicler",
     emoji: "🎬",
     service: "Document and create visual histories",

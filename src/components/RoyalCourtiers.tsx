@@ -6,11 +6,11 @@ import advisorJennifer from "@/assets/advisor-jennifer.jpg";
 import advisorTom from "@/assets/advisor-tom.jpg";
 
 const courtiers = [
-  { name: "Ayesha", image: advisorAyesha, status: "ZZZZzzzz!" },
-  { name: "Eddy", image: advisorEddy, status: "zzzzzzZZZZZ!" },
-  { name: "Isabella", image: advisorIsabella, status: "zzzzzZZZZZ!" },
-  { name: "Jennifer", image: advisorJennifer, status: "ZZZZzzzz!" },
-  { name: "Tom", image: advisorTom, status: "ZZZZzzzz!" },
+  { name: "Katharina", image: advisorAyesha, status: "ZZZZzzzz!" },
+  { name: "Ludwig", image: advisorEddy, status: "zzzzzzZZZZZ!" },
+  { name: "Elisabeth", image: advisorIsabella, status: "zzzzzZZZZZ!" },
+  { name: "Friedrich", image: advisorJennifer, status: "ZZZZzzzz!" },
+  { name: "Wilhelm", image: advisorTom, status: "ZZZZzzzz!" },
 ];
 
 const RoyalCourtiers = () => {
