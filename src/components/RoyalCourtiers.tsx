@@ -5,27 +5,58 @@ import advisorIsabella from "@/assets/advisor-isabella.jpg";
 import advisorJennifer from "@/assets/advisor-jennifer.jpg";
 import advisorTom from "@/assets/advisor-tom.jpg";
 
+const royalActivities = [
+  "Negotiating treaties...",
+  "Executing trade...",
+  "Strategizing...",
+  "Analyzing markets...",
+  "Deliberating...",
+  "Commanding resources...",
+  "Calculating wealth...",
+  "Forging alliances...",
+  "Plotting ascension...",
+  "Consulting advisors...",
+];
+
 const courtiers = [
-  { name: "Katharina", image: advisorAyesha, status: "ZZZZzzzz!" },
-  { name: "Ludwig", image: advisorEddy, status: "zzzzzzZZZZZ!" },
-  { name: "Elisabeth", image: advisorIsabella, status: "zzzzzZZZZZ!" },
-  { name: "Friedrich", image: advisorJennifer, status: "ZZZZzzzz!" },
-  { name: "Wilhelm", image: advisorTom, status: "ZZZZzzzz!" },
+  { name: "Katharina", image: advisorAyesha },
+  { name: "Ludwig", image: advisorEddy },
+  { name: "Elisabeth", image: advisorIsabella },
+  { name: "Friedrich", image: advisorJennifer },
+  { name: "Wilhelm", image: advisorTom },
 ];
 
 const RoyalCourtiers = () => {
   const [animating, setAnimating] = useState<number[]>([]);
+  const [statuses, setStatuses] = useState<string[]>(
+    courtiers.map(() => royalActivities[Math.floor(Math.random() * royalActivities.length)])
+  );
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    // Animation effect
+    const animationInterval = setInterval(() => {
       const randomIndex = Math.floor(Math.random() * courtiers.length);
       setAnimating((prev) => [...prev, randomIndex]);
       setTimeout(() => {
         setAnimating((prev) => prev.filter((i) => i !== randomIndex));
-      }, 2000);
-    }, 3000);
+      }, 1500 + Math.random() * 1000);
+    }, 2000 + Math.random() * 2000);
 
-    return () => clearInterval(interval);
+    // Status change effect for each courtier with different timings
+    const statusIntervals = courtiers.map((_, index) => {
+      return setInterval(() => {
+        setStatuses((prev) => {
+          const newStatuses = [...prev];
+          newStatuses[index] = royalActivities[Math.floor(Math.random() * royalActivities.length)];
+          return newStatuses;
+        });
+      }, 3000 + Math.random() * 4000);
+    });
+
+    return () => {
+      clearInterval(animationInterval);
+      statusIntervals.forEach(interval => clearInterval(interval));
+    };
   }, []);
 
   return (
@@ -62,7 +93,7 @@ const RoyalCourtiers = () => {
                   <p className={`text-sm text-muted-foreground transition-all duration-500 ${
                     animating.includes(index) ? "animate-pulse text-accent" : ""
                   }`}>
-                    {courtier.status}
+                    {statuses[index]}
                   </p>
                 </div>
               </div>
