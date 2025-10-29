@@ -5,7 +5,7 @@ const courtMembers = [
   {
     name: "Friedrich",
     title: "Pixel Broker",
-    emoji: "🎯",
+    emoji: "⚔️",
     service: "Buy/sell pixels on the imperial website",
     cost: "0.01 USDC per request",
     balance: "10.00 USDC",
@@ -14,7 +14,7 @@ const courtMembers = [
   {
     name: "Wilhelm",
     title: "The Task Coordinator",
-    emoji: "🤝",
+    emoji: "🛡️",
     service: "Request breakdown & strategic planning",
     cost: "0.01 USDC per request",
     balance: "10.00 USDC",
@@ -23,7 +23,7 @@ const courtMembers = [
   {
     name: "Ludwig",
     title: "The Royal Scraper",
-    emoji: "🔥",
+    emoji: "📜",
     service: "Extract web page intelligence for any query",
     cost: "0.01 USDC per request",
     balance: "10.00 USDC",
@@ -32,7 +32,7 @@ const courtMembers = [
   {
     name: "Elisabeth",
     title: "The Imperial Artist",
-    emoji: "🖼️",
+    emoji: "🎨",
     service: "Create custom imperial images on demand",
     cost: "0.01 USDC per request",
     balance: "10.00 USDC",
@@ -41,7 +41,7 @@ const courtMembers = [
   {
     name: "Katharina",
     title: "The Royal Chronicler",
-    emoji: "🎬",
+    emoji: "📖",
     service: "Document and create visual histories",
     cost: "0.01 USDC per request",
     balance: "10.00 USDC",
@@ -66,38 +66,53 @@ const CurrentCourtMembers = () => {
           {courtMembers.map((member) => (
             <Card
               key={member.name}
-              className="bg-card/80 backdrop-blur-sm border-2 border-accent/30 hover:border-accent transition-all duration-300 shadow-royal hover:shadow-gold group"
+              className="relative bg-gradient-to-br from-card via-card/90 to-card/80 backdrop-blur-sm border-4 border-double border-accent/40 hover:border-accent/70 transition-all duration-500 shadow-[0_8px_30px_rgb(0,0,0,0.3),inset_0_0_30px_rgba(212,175,55,0.1)] hover:shadow-[0_12px_40px_rgba(212,175,55,0.4),inset_0_0_40px_rgba(212,175,55,0.2)] group overflow-hidden"
             >
-              <CardHeader>
+              {/* Medieval corner decorations */}
+              <div className="absolute top-0 left-0 w-8 h-8 border-t-4 border-l-4 border-accent/60"></div>
+              <div className="absolute top-0 right-0 w-8 h-8 border-t-4 border-r-4 border-accent/60"></div>
+              <div className="absolute bottom-0 left-0 w-8 h-8 border-b-4 border-l-4 border-accent/60"></div>
+              <div className="absolute bottom-0 right-0 w-8 h-8 border-b-4 border-r-4 border-accent/60"></div>
+              
+              <CardHeader className="relative">
                 <div className="flex items-start justify-between">
-                  <div className="text-4xl mb-2 group-hover:scale-110 transition-transform duration-300">
-                    {member.emoji}
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-accent/20 blur-xl rounded-full"></div>
+                    <div className="relative text-5xl mb-2 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 drop-shadow-[0_0_10px_rgba(212,175,55,0.8)]">
+                      {member.emoji}
+                    </div>
                   </div>
-                  <div className="text-right">
-                    <div className="text-xs text-muted-foreground mb-1">Balance</div>
-                    <div className="text-accent font-bold text-lg">{member.balance}</div>
+                  <div className="text-right bg-accent/10 px-3 py-2 rounded-md border border-accent/30">
+                    <div className="text-xs text-muted-foreground mb-1 uppercase tracking-wider">Treasury</div>
+                    <div className="text-accent font-bold text-lg drop-shadow-[0_0_8px_rgba(212,175,55,0.6)]">{member.balance}</div>
                   </div>
                 </div>
-                <CardTitle className="text-2xl text-accent">{member.name}</CardTitle>
-                <CardDescription className="text-secondary-foreground font-medium">
+                <div className="mt-2 mb-1 h-px w-full bg-gradient-to-r from-transparent via-accent/50 to-transparent"></div>
+                <CardTitle className="text-2xl text-accent font-serif drop-shadow-[0_0_10px_rgba(212,175,55,0.4)]">{member.name}</CardTitle>
+                <CardDescription className="text-secondary-foreground font-medium italic">
                   "{member.title}"
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <p className="text-sm text-muted-foreground mb-1">Service:</p>
-                  <p className="text-foreground/90">{member.service}</p>
+              <CardContent className="space-y-4 relative">
+                <div className="bg-muted/20 p-3 rounded border border-accent/20">
+                  <p className="text-xs text-muted-foreground mb-2 uppercase tracking-wider flex items-center gap-2">
+                    <span className="text-accent">⚜</span> Royal Service
+                  </p>
+                  <p className="text-foreground/90 text-sm">{member.service}</p>
                 </div>
-                <div>
-                  <p className="text-sm text-muted-foreground mb-1">Cost:</p>
+                <div className="bg-muted/20 p-3 rounded border border-accent/20">
+                  <p className="text-xs text-muted-foreground mb-2 uppercase tracking-wider flex items-center gap-2">
+                    <span className="text-accent">👑</span> Royal Decree
+                  </p>
                   <p className="text-accent font-medium">{member.cost}</p>
                 </div>
                 <Button
                   variant="royal"
-                  className="w-full"
+                  className="w-full relative overflow-hidden group/btn"
                   onClick={() => window.open(member.link, "_blank")}
                 >
-                  Request Audience
+                  <span className="relative z-10">⚔️ Request Audience ⚔️</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-accent/20 to-transparent translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-1000"></div>
                 </Button>
               </CardContent>
             </Card>
