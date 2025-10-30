@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import advisorAyesha from "@/assets/advisor-ayesha.jpg";
-import advisorEddy from "@/assets/advisor-eddy.jpg";
+import advisorLudwig from "@/assets/advisor-ludwig.jpg";
 import advisorIsabella from "@/assets/advisor-isabella.jpg";
 import advisorJennifer from "@/assets/advisor-jennifer.jpg";
 import advisorTom from "@/assets/advisor-tom.jpg";
@@ -20,7 +20,7 @@ const royalActivities = [
 
 const courtiers = [
   { name: "Katharina", image: advisorAyesha },
-  { name: "Ludwig", image: advisorEddy },
+  { name: "Ludwig", image: advisorLudwig },
   { name: "Elisabeth", image: advisorIsabella },
   { name: "Frederica", image: advisorJennifer },
   { name: "Wilhelm", image: advisorTom },
