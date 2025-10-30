@@ -106,14 +106,20 @@ const CurrentCourtMembers = () => {
                   </p>
                   <p className="text-accent font-medium">{member.cost}</p>
                 </div>
-                <Button
-                  variant="royal"
-                  className="w-full relative overflow-hidden group/btn"
-                  onClick={() => window.open(member.link, "_blank")}
+                <a 
+                  href={member.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block"
                 >
-                  <span className="relative z-10">⚔️ Request Audience ⚔️</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-accent/20 to-transparent translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-1000"></div>
-                </Button>
+                  <Button
+                    variant="royal"
+                    className="w-full relative overflow-hidden group/btn"
+                  >
+                    <span className="relative z-10">⚔️ Request Audience ⚔️</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-accent/20 to-transparent translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-1000"></div>
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           ))}
