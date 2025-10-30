@@ -28,9 +28,9 @@ const HeroSection = () => {
         </p>
 
         <div className="bg-card/60 backdrop-blur-sm border-2 border-accent/30 rounded-lg p-4 max-w-2xl mx-auto">
-          <p className="text-sm text-muted-foreground mb-2 tracking-wide">Imperial Treasury Address</p>
+          <p className="text-sm text-muted-foreground mb-2 tracking-wide">$xEMPR Token Contract Address</p>
           <p className="font-mono text-accent text-sm md:text-base break-all">
-            8McGpgySYnYvDhYS4xHJxrYMn3FVXUSjxMb4kE88bpump
+            TBA
           </p>
         </div>
       </div>
