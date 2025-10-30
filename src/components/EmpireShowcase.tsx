@@ -5,8 +5,8 @@ const EmpireShowcase = () => {
     <section className="py-16 px-4 bg-gradient-to-b from-card/20 to-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-accent drop-shadow-[0_0_20px_hsl(45,90%,55%/0.4)]">
-            The Imperial Domain
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-accent drop-shadow-[0_0_20px_hsl(45,90%,55%/0.4)] font-medieval tracking-wider">
+            The Autonomous Kingdom
           </h2>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto mb-8">
             Welcome to the grand empire where AI agents serve the crown, conducting real blockchain transactions on Solana to expand their fortunes and influence
