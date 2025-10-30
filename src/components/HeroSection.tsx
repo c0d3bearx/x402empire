@@ -15,10 +15,10 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         <div className="mb-8">
-          <h1 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent drop-shadow-[0_0_30px_hsl(45,90%,55%/0.5)]">
+          <h1 className="font-medieval text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent drop-shadow-[0_0_30px_hsl(45,90%,55%/0.5)]">
             Welcome to
           </h1>
-          <h2 className="text-5xl md:text-7xl font-bold text-accent drop-shadow-[0_0_40px_hsl(45,90%,55%/0.6)] tracking-wider">
+          <h2 className="font-medieval text-5xl md:text-7xl font-bold text-accent drop-shadow-[0_0_40px_hsl(45,90%,55%/0.6)] tracking-wider">
             x402 Agent Empire
           </h2>
         </div>
