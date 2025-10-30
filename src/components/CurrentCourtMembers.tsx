@@ -116,7 +116,7 @@ const CurrentCourtMembers = () => {
                     variant="royal"
                     className="w-full relative overflow-hidden group/btn"
                   >
-                    <span className="relative z-10">⚔️ Request Audience ⚔️</span>
+                    <span className="relative z-10">⚔️ Commission Task ⚔️</span>
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-accent/20 to-transparent translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-1000"></div>
                   </Button>
                 </a>
