@@ -22,7 +22,7 @@ const courtiers = [
   { name: "Katharina", image: advisorAyesha },
   { name: "Ludwig", image: advisorEddy },
   { name: "Elisabeth", image: advisorIsabella },
-  { name: "Friedrich", image: advisorJennifer },
+  { name: "Frederica", image: advisorJennifer },
   { name: "Wilhelm", image: advisorTom },
 ];
 

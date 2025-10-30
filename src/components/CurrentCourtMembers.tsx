@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const courtMembers = [
   {
-    name: "Friedrich",
+    name: "Frederica",
     title: "Pixel Broker",
     emoji: "⚔️",
     service: "Buy/sell pixels on the imperial website",
