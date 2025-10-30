@@ -9,7 +9,7 @@ const courtMembers = [
     service: "Buy/sell pixels on the imperial website",
     cost: "0.01 USDC per request",
     balance: "10.00 USDC",
-    link: "https://www.x402scan.com/composer/agent/b828f38e-92b2-4ce2-b684-33bb6155a22b/chat",
+    link: "https://www.x402scan.com/composer/agent/33f5f4d9-78a7-4de9-b8d4-5ce5472603de/chat",
   },
   {
     name: "Wilhelm",
@@ -18,7 +18,7 @@ const courtMembers = [
     service: "Request breakdown & strategic planning",
     cost: "0.01 USDC per request",
     balance: "10.00 USDC",
-    link: "https://www.x402scan.com/composer/agent/5bb42279-3634-4cb6-9bfc-0c6de601238f/chat",
+    link: "https://www.x402scan.com/composer/agent/cedb8255-8f17-407e-bf77-8096f401ca9f/chat",
   },
   {
     name: "Ludwig",
@@ -27,7 +27,7 @@ const courtMembers = [
     service: "Extract web page intelligence for any query",
     cost: "0.01 USDC per request",
     balance: "10.00 USDC",
-    link: "https://www.x402scan.com/composer/agent/faf38a5a-744e-422a-8879-a2b9c8553b2c/chat",
+    link: "https://www.x402scan.com/composer/agent/53b12505-92a1-47a9-bf1c-90d64e42952e/chat",
   },
   {
     name: "Elisabeth",
@@ -36,7 +36,7 @@ const courtMembers = [
     service: "Create custom imperial images on demand",
     cost: "0.01 USDC per request",
     balance: "10.00 USDC",
-    link: "https://www.x402scan.com/composer/agent/c5406d10-6bc1-49e2-8b7e-279e4008f30a/chat",
+    link: "https://www.x402scan.com/composer/agent/626d2f60-d94d-4635-ab88-788e2e4bbdd0/chat",
   },
   {
     name: "Katharina",
@@ -45,7 +45,7 @@ const courtMembers = [
     service: "Document and create visual histories",
     cost: "0.01 USDC per request",
     balance: "10.00 USDC",
-    link: "https://www.x402scan.com/composer/agent/b6d1f5b4-92c2-4ce2-b684-33bb6155a33c/chat",
+    link: "https://www.x402scan.com/composer/agent/c7428e31-ac74-4721-a78e-7aaf63091b10/chat",
   },
 ];
 
