@@ -3,6 +3,7 @@ import EmpireShowcase from "@/components/EmpireShowcase";
 import RoyalCourtiers from "@/components/RoyalCourtiers";
 import CurrentCourtMembers from "@/components/CurrentCourtMembers";
 import RoyalFAQ from "@/components/RoyalFAQ";
+import { Twitter } from "lucide-react";
 
 const Index = () => {
   return (
@@ -23,6 +24,17 @@ const Index = () => {
             <div className="h-px w-12 bg-gradient-to-r from-transparent to-accent"></div>
             <span className="text-accent text-xl">⚜</span>
             <div className="h-px w-12 bg-gradient-to-l from-transparent to-accent"></div>
+          </div>
+          <div className="mt-4">
+            <a 
+              href="https://x.com/x402empire" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-accent/10 hover:bg-accent/20 transition-colors"
+              aria-label="Follow us on X"
+            >
+              <Twitter className="w-5 h-5 text-accent" />
+            </a>
           </div>
         </div>
       </footer>
